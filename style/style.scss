@@ -21,10 +21,10 @@ Navigation
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-left: 2rem;
-        padding-right: 2rem;
+        // padding-left: 2rem;
+        // padding-right: 2rem;
         margin: auto;
-        width: 97.5%;
+        width: 95%;
     }
     #nav-title{
         font-size: 3.5rem;
@@ -33,7 +33,7 @@ Navigation
     }
     #nav-items{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         flex-basis: 45rem;
     }
@@ -44,7 +44,7 @@ Navigation
     }
     li{
         list-style: none;
-        font-size: 2.3rem;
+        font-size: 1.7rem;
         font-family: 'Noto Sans', sans-serif;
     }
 }
