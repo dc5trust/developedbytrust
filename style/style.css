@@ -6,16 +6,17 @@
 
 html {
   font-size: 62.5%;
+  background-color: rgb(241, 241, 241);
 }
 
 /*
 Navigation
 */
 #nav-bar {
-  min-height: 10vh;
+  min-height: 11vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 #nav-bar .nav-container {
   display: flex;
@@ -23,6 +24,7 @@ Navigation
   align-items: center;
   margin: auto;
   width: 95%;
+  height: 100%;
 }
 #nav-bar #nav-title {
   font-size: 3.5rem;
@@ -33,36 +35,44 @@ Navigation
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-basis: 45rem;
+  flex-basis: 35rem;
 }
 #nav-bar a {
   text-decoration: none;
   color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #nav-bar li {
   list-style: none;
   font-size: 1.7rem;
   font-family: "Noto Sans", sans-serif;
 }
+#nav-bar .twitter-image {
+  font-size: 1rem;
+  height: 2.5rem;
+  width: 4rem;
+}
+#nav-bar .instagram-image {
+  height: 3.4rem;
+  width: 3.4rem;
+}
 
 #work-main {
-  min-height: 90vh;
+  min-height: 80vh;
   display: grid;
   grid-template-columns: repeat(2, minmax(100px, 1fr));
-  grid-template-rows: repeat(4, minmax(100px, 1fr));
+  grid-template-rows: repeat(3, minmax(100px, 1fr));
   align-content: center;
   justify-content: center;
   width: 95%;
   margin: auto;
-  grid-gap: 2rem;
+  grid-gap: 0.8rem;
 }
 #work-main img {
   height: 100%;
   width: 100%;
-}
-#work-main img:hover {
-  background: rgb(0, 0, 0);
-  opacity: 0.5;
 }
 
 .container {
@@ -89,7 +99,7 @@ Navigation
   right: 0;
   height: 100%;
   width: 100%;
-  transition: 0.5s ease;
+  transition: 0.5s ease-in-out;
   background: rgba(0, 0, 0, 0);
 }
 
@@ -103,4 +113,33 @@ Navigation
   text-align: center;
   opacity: 0;
   z-index: 10;
+}
+
+.footer-main {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-main .footer-container {
+  min-height: 12vh;
+  margin: auto;
+  width: 95%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  font-size: 2rem;
+  font-family: "Noto Sans", sans-serif;
+}
+.test {
+  min-height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5rem;
+}
+.test p {
+  font-size: 3rem;
 }/*# sourceMappingURL=style.css.map */

@@ -6,6 +6,8 @@
 
 html{
     font-size: 62.5%;
+    background-color: rgb(241, 241, 241);
+    // background-color: rgb(53, 53, 53);
 }
 
 /*
@@ -13,21 +15,23 @@ Navigation
 */
 
 #nav-bar{
-    min-height: 10vh;
+    min-height: 11vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    // background-color: aqua;
+    
     .nav-container{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        // padding-left: 2rem;
-        // padding-right: 2rem;
         margin: auto;
         width: 95%;
+        height: 100%;
     }
     #nav-title{
         font-size: 3.5rem;
+        // font-family: 'Dancing Script', cursive;
         font-family: 'Cairo', sans-serif;
         cursor: pointer;
     }
@@ -35,17 +39,30 @@ Navigation
         display: flex;
         justify-content: space-between;
         align-items: center;
-        flex-basis: 45rem;
+        flex-basis: 35rem;
+        // background-color: aqua;
     }
 
     a{
         text-decoration: none;
         color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     li{
         list-style: none;
         font-size: 1.7rem;
         font-family: 'Noto Sans', sans-serif;
+    }
+    .twitter-image{
+        font-size: 1rem;
+        height: 2.5rem;
+        width: 4rem;
+    }
+    .instagram-image{
+        height: 3.4rem;
+        width: 3.4rem;
     }
 }
 
