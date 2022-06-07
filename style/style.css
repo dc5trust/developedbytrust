@@ -78,20 +78,7 @@ Navigation
 .container {
   position: relative;
 }
-.container .overlay:hover {
-  background: rgba(255, 255, 255, 0.55);
-}
-.container:hover .text {
-  opacity: 1;
-}
-
-.image {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.overlay {
+.container .overlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -99,13 +86,15 @@ Navigation
   right: 0;
   height: 100%;
   width: 100%;
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease-in;
   background: rgba(0, 0, 0, 0);
 }
-
-.text {
+.container .overlay:hover {
+  background: rgba(255, 255, 255, 0.7);
+}
+.container .text {
   color: rgb(0, 0, 0);
-  font-size: 2.5rem;
+  font-size: 7.5rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -113,6 +102,9 @@ Navigation
   text-align: center;
   opacity: 0;
   z-index: 10;
+}
+.container:hover .text {
+  opacity: 1;
 }
 
 .footer-main {
@@ -126,20 +118,36 @@ Navigation
   margin: auto;
   width: 95%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  flex-direction: column;
+  font-size: 1.5rem;
+  font-family: "Noto Sans", sans-serif;
+}
+.footer-main .copyright {
   font-size: 2rem;
   font-family: "Noto Sans", sans-serif;
 }
-.test {
-  min-height: 5vh;
+
+#contact-main {
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  margin: auto;
+}
+#contact-main .info-contact-container {
+  background-color: aquamarine;
+  flex-basis: 50%;
+}
+#contact-main .info-contact-container .contact-info {
+  font-size: 3rem;
+}
+#contact-main .info-input-container {
+  background-color: bisque;
+  flex-basis: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 5rem;
-}
-.test p {
-  font-size: 3rem;
 }/*# sourceMappingURL=style.css.map */

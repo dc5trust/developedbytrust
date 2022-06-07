@@ -1,0 +1,24 @@
+#contact-main{
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    margin: auto;
+
+    .info-contact-container{
+        background-color: aquamarine;
+        flex-basis: 50%;
+        .contact-info{
+            font-size: 3rem;
+        }
+    }
+    .info-input-container{
+        background-color: bisque;
+        flex-basis: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
