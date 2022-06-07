@@ -1,0 +1,48 @@
+* {
+  padding: 0rem;
+  margin: 0rem;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/*
+Navigation
+*/
+#nav-bar {
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#nav-bar .nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin: auto;
+  width: 97.5%;
+}
+#nav-bar #nav-title {
+  font-size: 3.5rem;
+  font-family: "Cairo", sans-serif;
+  cursor: pointer;
+}
+#nav-bar #nav-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-basis: 45rem;
+}
+#nav-bar a {
+  text-decoration: none;
+  color: black;
+}
+#nav-bar li {
+  list-style: none;
+  font-size: 2.3rem;
+  font-family: "Noto Sans", sans-serif;
+}/*# sourceMappingURL=style.css.map */
