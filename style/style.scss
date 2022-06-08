@@ -7,9 +7,12 @@
 html{
     font-size: 62.5%;
     background-color: rgb(241, 241, 241);
-    // background-color: rgb(53, 53, 53);
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
 /*
 Navigation
 */
@@ -19,7 +22,6 @@ Navigation
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    // background-color: aqua;
     
     .nav-container{
         display: flex;
@@ -31,16 +33,16 @@ Navigation
     }
     #nav-title{
         font-size: 3.5rem;
-        // font-family: 'Dancing Script', cursive;
         font-family: 'Cairo', sans-serif;
         cursor: pointer;
+        flex-basis: 35rem;
     }
+
     #nav-items{
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-basis: 35rem;
-        // background-color: aqua;
     }
 
     a{
@@ -64,7 +66,102 @@ Navigation
         height: 3.4rem;
         width: 3.4rem;
     }
+
+    .mobile-menu{
+        display: none;
+        width: 3.5rem;
+        z-index: 12;
+        cursor: pointer;
+        // overflow: hidden;
+        .burger-lines{
+            border: 1px solid black;
+            margin-bottom: 1rem;
+            // z-index: 12;
+        }
+    }
 }
+
+.mobile-menu-pop-up{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  overflow-y: hidden;
+    li{
+        list-style: none;
+        font-size: 6rem;
+        padding: 1.5rem;
+      }
+
+    .mobile-items{
+
+    }
+
+    .mobile-social-media{
+        position: absolute;
+        bottom: 5rem;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        .twitter-image{
+            position: relative;
+            bottom: .4rem;
+            height: 2.5rem;
+            width: 4rem;
+        }
+        .instagram-image{
+            height: 3.4rem;
+            width: 3.4rem;
+        }
+    }
+}
+
+// body.mobile-menu-pop-up{
+//     height: 100vh;
+//     overflow-y: hidden;
+//     // background-color: grey;
+// }
+
+/* 
+    Mobile
+*/
+
+@media only screen and (max-width: 700px){
+    body {
+        position: fixed;
+    }
+    #nav-bar{
+  
+        #nav-items{
+            display: none;
+        }
+        #nav-title{
+            // overflow: hidden;
+            z-index: 12;
+        }
+        .mobile-menu{
+            display: block;
+            // overflow: hidden;
+            // width: 3.5rem;
+            
+            .burger-lines{
+                // border: 1px solid black;
+                // margin-bottom: 1rem;
+            }
+        }
+    }
+
+}
+
 
 @import 'work';
 @import 'contact';

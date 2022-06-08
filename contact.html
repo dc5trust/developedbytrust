@@ -60,13 +60,60 @@
           reviews will be authentic. You cannot purchase a positive review and
           each item that may reviewed will be up to my discretion.
         </p>
-        <div class="social-media-container"></div>
+        <div class="line"></div>
+        <div class="disclaimer-container">
+          <p class="disclaimer">
+            DISCLAIMER: All reviews will remain authentic and my opinions cannot
+            be purchased.
+          </p>
+        </div>
       </div>
       <div class="info-input-container">
-        <label for="name">NAME</label>
-        <input type="text" />
-        <label for="email">EMAIL</label>
-        <input type="text" />
+        <form method="post">
+          <div class="form-name">
+            <label for="name">NAME</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="John AppleSeed"
+              required
+            />
+          </div>
+
+          <div class="form-email">
+            <label for="email">EMAIL</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="example@company.com"
+              required
+            />
+          </div>
+
+          <div class="form-subject">
+            <label for="subject">subject</label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="subject"
+              required
+            />
+          </div>
+
+          <div class="form-text-area">
+            <label for="message">MESSAGE</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Your message"
+              required
+            ></textarea>
+          </div>
+          <button class="submit-btn" type="submit">Submit</button>
+        </form>
       </div>
     </section>
 
