@@ -13,6 +13,7 @@ a{
     text-decoration: none;
     color: black;
 }
+
 /*
 Navigation
 */
@@ -93,11 +94,12 @@ Navigation
   left: 0;
   z-index: 10;
   overflow-y: hidden;
+    
     li{
         list-style: none;
         font-size: 6rem;
         padding: 1.5rem;
-      }
+    }
 
     .mobile-items{
 
@@ -136,9 +138,9 @@ Navigation
 */
 
 @media only screen and (max-width: 700px){
-    body {
-        position: fixed;
-    }
+    // body {
+    //     position: fixed;
+    // }
     #nav-bar{
   
         #nav-items{
@@ -149,7 +151,7 @@ Navigation
             z-index: 12;
         }
         .mobile-menu{
-            display: block;
+            display: inline-block;
             // overflow: hidden;
             // width: 3.5rem;
             
@@ -165,3 +167,4 @@ Navigation
 
 @import 'work';
 @import 'contact';
+@import 'about';

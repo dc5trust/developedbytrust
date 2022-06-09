@@ -117,10 +117,6 @@ Navigation
     Mobile
 */
 @media only screen and (max-width: 700px) {
-  body {
-    position: fixed;
-  }
-
   #nav-bar #nav-items {
     display: none;
   }
@@ -128,7 +124,7 @@ Navigation
     z-index: 12;
   }
   #nav-bar .mobile-menu {
-    display: block;
+    display: inline-block;
   }
 }
 #work-main {
@@ -240,6 +236,7 @@ Mobile
 #contact-main .info-contact-container .contact-title {
   height: 17vh;
   font-size: 4.5rem;
+  font-family: "Noto Sans", sans-serif;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -248,11 +245,15 @@ Mobile
   font-size: 2.2rem;
   padding-right: 5rem;
   margin-bottom: 8rem;
+  font-family: "Noto Sans", sans-serif;
+  line-height: 1.6;
 }
 #contact-main .info-contact-container .disclaimer {
-  margin-top: 8rem;
-  font-size: 2.2rem;
+  font-family: "Noto Sans", sans-serif;
+  margin-top: 5rem;
+  font-size: 2.5rem;
   padding-right: 5rem;
+  line-height: 1.6;
 }
 #contact-main .info-input-container {
   min-height: 69vh;
@@ -278,4 +279,54 @@ Mobile
 #contact-main .line {
   border: 1px solid black;
   width: 50%;
+}
+
+#about-main {
+  min-height: 69vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  margin: auto;
+}
+#about-main .about-title-container {
+  width: 35rem;
+  min-height: 49vh;
+}
+#about-main .about-title {
+  font-size: 7rem;
+  min-width: 30rem;
+}
+#about-main .about-introduction-container {
+  width: 75rem;
+  min-height: 49vh;
+}
+#about-main .about-introduction {
+  font-size: 2rem;
+  padding: 1.5rem;
+  text-align: left;
+  font-family: "Noto Sans", sans-serif;
+  line-height: 1.6;
+}
+
+#self-image {
+  margin-top: 5rem;
+  height: 300px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 850px) {
+  #about-main .about-title {
+    font-size: 7rem;
+    min-width: 30rem;
+  }
+  #about-main .about-introduction {
+    font-size: 1.7rem;
+    padding: 1.5rem;
+    text-align: left;
+    font-family: "Noto Sans", sans-serif;
+    line-height: 1.6;
+  }
 }/*# sourceMappingURL=style.css.map */
