@@ -39,7 +39,7 @@ function openMobileMenu (){
         popUp.style.display = 'flex';
         // workPage.style.position = 'fixed';
         document.body.style.overflow = 'hidden';
-        document.body.style.position = 'fixed'; 
+        // document.body.style.position = 'fixed'; 
         gsap.to(lineOne, {rotate: 45, x: '-5', y: '6', duration: 1});
         gsap.to(lineTwo, {rotate: -45, x: '-5', y:'-6', duration: 1});
     }else if(burgerMenu.classList[1] === undefined){

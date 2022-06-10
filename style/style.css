@@ -97,10 +97,10 @@ Navigation
   top: 0;
   left: 0;
   z-index: 10;
-  overflow-y: auto;
+  overflow-y: visible;
 }
 .mobile-menu-pop-up .mobile-inner-container {
-  min-height: 50vh;
+  min-height: 70vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -468,7 +468,7 @@ Mobile
     padding: 1rem;
   }
   #about-main .about-introduction-container {
-    width: 90%;
+    width: 95%;
     min-height: 39vh;
     margin: auto;
   }

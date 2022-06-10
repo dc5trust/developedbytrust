@@ -103,14 +103,15 @@ Navigation
   top: 0;
   left: 0;
   z-index: 10;
-  overflow-y: auto;
+  overflow-y: visible;
 
     .mobile-inner-container{
-        min-height: 50vh;
+        min-height: 70vh;
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-direction: column;
+        // background-color: aqua;
     }
 
     .mobile-items{
