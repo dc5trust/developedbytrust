@@ -103,7 +103,7 @@ Navigation
   top: 0;
   left: 0;
   z-index: 10;
-  overflow: hidden;
+  overflow-y: auto;
 
     .mobile-inner-container{
         min-height: 50vh;
