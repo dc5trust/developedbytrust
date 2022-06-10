@@ -22,6 +22,7 @@ Navigation
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  overflow: hidden;
 }
 #nav-bar .nav-container {
   display: flex;
@@ -88,8 +89,9 @@ Navigation
   display: none;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  width: 100%;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
   background-color: white;
   position: fixed;
   top: 0;
@@ -97,16 +99,21 @@ Navigation
   z-index: 10;
   overflow: hidden;
 }
+.mobile-menu-pop-up .mobile-inner-container {
+  min-height: 50vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
 .mobile-menu-pop-up li {
   list-style: none;
   font-size: 6rem;
   padding: 1.5rem;
 }
 .mobile-menu-pop-up .mobile-social-media {
-  position: absolute;
   bottom: 7rem;
   width: 100%;
-  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -152,6 +159,7 @@ Navigation
   width: 95%;
   margin: auto;
   grid-gap: 0.8rem;
+  overflow: hidden;
 }
 #work-main img {
   height: 100%;
@@ -198,6 +206,7 @@ Navigation
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .footer-main .footer-container {
   min-height: 4vh;
@@ -230,8 +239,8 @@ Mobile
 }
 @media only screen and (max-width: 733px) {
   #work-main {
-    grid-template-columns: repeat(1, minmax(50px, 1fr));
-    grid-template-rows: repeat(6, minmax(50px, 1fr));
+    grid-template-columns: repeat(1, minmax(40px, 1fr));
+    grid-template-rows: repeat(6, minmax(40px, 1fr));
   }
 }
 #contact-main {

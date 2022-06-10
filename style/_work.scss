@@ -8,7 +8,7 @@
     width: 95%;
     margin: auto;
     grid-gap: .8rem;
-    
+    overflow: hidden;
     // overflow-y: none;
     img{
         height: 100%;
@@ -61,7 +61,7 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    
+    overflow: hidden;
     .footer-container{
         min-height: 4vh;
         // background-color: aqua;
@@ -99,7 +99,8 @@ Mobile
 
 @media only screen and (max-width: 733px){
     #work-main{
-        grid-template-columns: repeat(1, minmax(50px, 1fr));
-        grid-template-rows: repeat(6, minmax(50px, 1fr));
+        grid-template-columns: repeat(1, minmax(40px, 1fr));
+        grid-template-rows: repeat(6, minmax(40px, 1fr));
+        // overflow-x: hidden;
     }
 }
