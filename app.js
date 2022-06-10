@@ -52,3 +52,4 @@ function openMobileMenu (){
     }
     
 }
+//position fixed causes the problem with the X moving, so I think in order to fix this bug, I will have to reorder the x when it does movce because of the positioning 
