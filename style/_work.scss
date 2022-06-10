@@ -1,15 +1,13 @@
 #work-main{
     min-height: 80vh;
     display: grid;
-    grid-template-columns: repeat(2, minmax(100px, 1fr));
-    grid-template-rows: repeat(3, minmax(100px, 1fr));
+    grid-template-columns: repeat(2, minmax(70px, 1fr));
+    grid-template-rows: repeat(3, minmax(70px, 1fr));
     align-content: center;
     justify-content: center;
     width: 95%;
     margin: auto;
     grid-gap: .8rem;
-    // background-color: aqua;
-    // overflow: hidden;
     img{
         height: 100%;
         width: 100%;
@@ -57,13 +55,14 @@
 
 
 .footer-main{
-    min-height: 20vh;
+    min-height: 9vh;
     display:flex;
     justify-content: center;
     align-items: center;
     
     .footer-container{
-        min-height: 12vh;
+        min-height: 4vh;
+        // background-color: aqua;
         margin: auto;
         width: 95%;
         display: flex;
@@ -87,20 +86,10 @@ Mobile
 
 @media only screen and (max-width: 800px){
     #work-main{
-        // min-height: 80vh;
-        // display: grid;
         grid-template-columns: repeat(2, minmax(60px, 500px));
         grid-template-rows: repeat(3, minmax(60px, 300px));
-        // align-content: center;
-        // justify-content: center;
-        // width: 95%;
-        // margin: auto;
-        // grid-gap: .8rem;
         img{
             background-position: center;
-            // height: 100%;
-            // width: 100%;
-            // object-fit: cover;
         }
         
     }
@@ -108,20 +97,7 @@ Mobile
 
 @media only screen and (max-width: 733px){
     #work-main{
-        // min-height: 80vh;
-        // display: grid;
         grid-template-columns: repeat(1, minmax(50px, 1fr));
         grid-template-rows: repeat(6, minmax(50px, 1fr));
-        // align-content: center;
-        // justify-content: center;
-        // width: 95%;
-        // margin: auto;
-        // grid-gap: .8rem;
-        img{
-            // height: 100%;
-            // width: 100%;
-            // object-fit: cover;
-        }
-        
     }
 }

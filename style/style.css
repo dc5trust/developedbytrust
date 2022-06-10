@@ -41,7 +41,7 @@ Navigation
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-basis: 35rem;
+  flex-basis: 40rem;
 }
 #nav-bar a {
   text-decoration: none;
@@ -59,10 +59,18 @@ Navigation
   font-size: 1rem;
   height: 2.5rem;
   width: 4rem;
+  position: relative;
+  bottom: -0.1rem;
 }
 #nav-bar .instagram-image {
   height: 3.4rem;
   width: 3.4rem;
+}
+#nav-bar .youtube-image {
+  position: relative;
+  bottom: -0.1rem;
+  height: 4rem;
+  width: 5rem;
 }
 #nav-bar .mobile-menu {
   display: none;
@@ -113,11 +121,17 @@ Navigation
   height: 3.4rem;
   width: 3.4rem;
 }
+.mobile-menu-pop-up .mobile-social-media .youtube-image {
+  position: relative;
+  height: 4rem;
+  width: 5rem;
+  bottom: -0.3rem;
+}
 
 /* 
     Mobile
 */
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 750px) {
   #nav-bar #nav-items {
     display: none;
   }
@@ -131,8 +145,8 @@ Navigation
 #work-main {
   min-height: 80vh;
   display: grid;
-  grid-template-columns: repeat(2, minmax(100px, 1fr));
-  grid-template-rows: repeat(3, minmax(100px, 1fr));
+  grid-template-columns: repeat(2, minmax(70px, 1fr));
+  grid-template-rows: repeat(3, minmax(70px, 1fr));
   align-content: center;
   justify-content: center;
   width: 95%;
@@ -180,13 +194,13 @@ Navigation
 }
 
 .footer-main {
-  min-height: 20vh;
+  min-height: 9vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .footer-main .footer-container {
-  min-height: 12vh;
+  min-height: 4vh;
   margin: auto;
   width: 95%;
   display: flex;
@@ -221,7 +235,7 @@ Mobile
   }
 }
 #contact-main {
-  min-height: 69vh;
+  min-height: 78vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -287,13 +301,25 @@ Mobile
   width: 50%;
 }
 #contact-main .button-container {
-  background-color: aqua;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 5rem;
 }
+#contact-main .submit-btn {
+  border: none;
+  padding: 1rem 10rem;
+  border-radius: 15px;
+  background-color: rgb(100, 100, 100);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1), 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  color: white;
+}
 
+/* 
+
+Mobile 
+
+*/
 @media only screen and (max-width: 887px) {
   #contact-main .info-contact-container .contact-title {
     font-size: 3.5rem;
@@ -308,7 +334,7 @@ Mobile
     font-size: 1.8rem;
   }
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 720px) {
   #contact-main {
     flex-wrap: wrap;
   }
@@ -341,6 +367,9 @@ Mobile
   #contact-main form {
     width: 95%;
   }
+  #contact-main .submit-btn {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 528px) {
   #contact-main .info-contact-container .contact-title {
@@ -358,7 +387,7 @@ Mobile
   }
 }
 #about-main {
-  min-height: 69vh;
+  min-height: 78vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
