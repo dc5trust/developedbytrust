@@ -104,15 +104,16 @@ Navigation
   top: 0;
   left: 0;
   z-index: 10;
-  overflow-y: auto;
+  overflow-y: scroll;
 
     .mobile-inner-container{
-        min-height: 55vh;
+        min-height: 60vh;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         flex-direction: column;
         // background-color: aqua;
+        // overflow-y: scroll;
     }
     
     li{
@@ -122,15 +123,11 @@ Navigation
     }
 
     .mobile-social-media{
-        // position: absolute;
-        // background-color: aquamarine;
         bottom: 7rem;
         width: 100%;
-        // margin: auto;
         display: flex;
         justify-content: center;
         align-items: center;
-        
         .twitter-image{
             position: relative;
             bottom: .4rem;
