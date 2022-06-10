@@ -13,8 +13,21 @@ navItems.forEach((items)=>{
     items.addEventListener('click', ()=>{
         //body position fixed removed 
         // document.body.style.position = 'static';
-        console.log(items);
-        gsap.to(items, {opacity: .5, duration: 1 });
+        if(burgerMenu.classList[1] === 'x-active'){
+            popUp.style.display = 'flex';
+            // workPage.style.position = 'fixed';
+            // document.body.style.overflow = 'hidden';
+            // document.body.style.position = 'fixed';
+            gsap.to(lineOne, {rotate: 45, x: '-5', y: '6', duration: 1});
+            gsap.to(lineTwo, {rotate: -45, x: '-5', y:'-6', duration: 1});
+        }else if(burgerMenu.classList[1] === undefined){
+            popUp.style.display = 'none';
+            // workPage.style.position = 'static';
+            // document.body.style.overflow = 'auto';
+            // document.body.style.position = 'static';
+            gsap.to(lineOne, {rotate: 0, x: '0', y: '0', duration: 1 });
+            gsap.to(lineTwo, {rotate: 0, x: '0', y:'0', duration: 1});
+        }
         // gsap.to(lineTwo, {rotate: 0, x: '0', y:'0', duration: 1});
         //mobile pop up display hidden none
     });
@@ -24,14 +37,14 @@ function openMobileMenu (){
     burgerMenu.classList.toggle('x-active');
     if(burgerMenu.classList[1] === 'x-active'){
         popUp.style.display = 'flex';
-        workPage.style.position = 'fixed';
+        // workPage.style.position = 'fixed';
         document.body.style.overflow = 'hidden';
         // document.body.style.position = 'fixed';
         gsap.to(lineOne, {rotate: 45, x: '-5', y: '6', duration: 1});
         gsap.to(lineTwo, {rotate: -45, x: '-5', y:'-6', duration: 1});
     }else if(burgerMenu.classList[1] === undefined){
         popUp.style.display = 'none';
-        workPage.style.position = 'static';
+        // workPage.style.position = 'static';
         document.body.style.overflow = 'auto';
         document.body.style.position = 'static';
         gsap.to(lineOne, {rotate: 0, x: '0', y: '0', duration: 1 });
