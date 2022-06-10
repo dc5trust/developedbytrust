@@ -93,14 +93,14 @@ Navigation
   display: none;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-color: white;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 10;
-  overflow-y: hidden;
+  overflow: hidden;
     
     li{
         list-style: none;
@@ -110,7 +110,7 @@ Navigation
 
     .mobile-social-media{
         position: absolute;
-        bottom: 5rem;
+        bottom: 7rem;
         width: 100%;
         margin: auto;
         display: flex;
