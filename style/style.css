@@ -95,7 +95,7 @@ Navigation
   top: 0;
   left: 0;
   z-index: 10;
-  overflow: hidden;
+  overflow-y: hidden;
 }
 .mobile-menu-pop-up li {
   list-style: none;
@@ -152,7 +152,6 @@ Navigation
   width: 95%;
   margin: auto;
   grid-gap: 0.8rem;
-  overflow: hidden;
 }
 #work-main img {
   height: 100%;
