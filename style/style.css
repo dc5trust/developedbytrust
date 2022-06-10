@@ -95,7 +95,7 @@ Navigation
   top: 0;
   left: 0;
   z-index: 10;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 .mobile-menu-pop-up li {
   list-style: none;
