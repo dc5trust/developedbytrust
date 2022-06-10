@@ -26,6 +26,9 @@
         font-family: 'Noto Sans', sans-serif;
         line-height: 1.8;
     }
+    .about-subtitle-container{
+        padding-left: 1.5rem;
+    }
 }
 
 #self-image{
@@ -110,6 +113,9 @@
             padding: 0rem;
             padding-bottom: .5rem;
             line-height: 1.8;
+        }
+        .about-subtitle-container{
+            padding-left: 0rem;
         }
     }
     #self-image{
