@@ -106,6 +106,7 @@ Navigation
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
+  overflow-y: scroll;
 }
 .mobile-menu-pop-up li {
   list-style: none;
