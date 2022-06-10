@@ -83,7 +83,7 @@ Navigation
         width: 3.5rem;
         z-index: 12;
         cursor: pointer;
-        // overflow: hidden;
+
         .burger-lines{
             box-shadow: 0 10px 10px rgba(0,0,0,.1), 0 4px 4px 0 rgba(0,0,0,.1);
             border: 1px solid black;
@@ -97,14 +97,14 @@ Navigation
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background-color: white;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 10;
-  overflow-y: scroll;
+  overflow: auto;
 
     .mobile-inner-container{
         min-height: 60vh;
@@ -112,8 +112,8 @@ Navigation
         justify-content: space-around;
         align-items: center;
         flex-direction: column;
+        overflow: auto;
         // background-color: aqua;
-        overflow-y: scroll;
     }
     
     li{
@@ -146,6 +146,8 @@ Navigation
         }
     }
 }
+
+
 
 /* 
     Mobile
