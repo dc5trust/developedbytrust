@@ -75,9 +75,9 @@ Navigation
         cursor: pointer;
         // overflow: hidden;
         .burger-lines{
+            box-shadow: 0 10px 10px rgba(0,0,0,.1), 0 4px 4px 0 rgba(0,0,0,.1);
             border: 1px solid black;
             margin-bottom: 1rem;
-            // z-index: 12;
         }
     }
 }
@@ -126,12 +126,6 @@ Navigation
         }
     }
 }
-
-// body.mobile-menu-pop-up{
-//     height: 100vh;
-//     overflow-y: hidden;
-//     // background-color: grey;
-// }
 
 /* 
     Mobile

@@ -71,6 +71,7 @@ Navigation
   cursor: pointer;
 }
 #nav-bar .mobile-menu .burger-lines {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1), 0 4px 4px 0 rgba(0, 0, 0, 0.1);
   border: 1px solid black;
   margin-bottom: 1rem;
 }
@@ -143,6 +144,7 @@ Navigation
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1), 0 4px 4px 0 rgba(0, 0, 0, 0.1);
 }
 
 .container {
@@ -234,7 +236,7 @@ Mobile
   flex-direction: column;
 }
 #contact-main .info-contact-container .contact-title {
-  height: 17vh;
+  min-height: 11vh;
   font-size: 4.5rem;
   font-family: "Noto Sans", sans-serif;
   display: flex;
@@ -244,9 +246,13 @@ Mobile
 #contact-main .info-contact-container .contact-info {
   font-size: 2.2rem;
   padding-right: 5rem;
-  margin-bottom: 8rem;
+  margin-bottom: 3.5rem;
   font-family: "Noto Sans", sans-serif;
   line-height: 1.6;
+}
+#contact-main .info-contact-container #sponsored-videos-subtitle {
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
 }
 #contact-main .info-contact-container .disclaimer {
   font-family: "Noto Sans", sans-serif;
@@ -280,7 +286,77 @@ Mobile
   border: 1px solid black;
   width: 50%;
 }
+#contact-main .button-container {
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+}
 
+@media only screen and (max-width: 887px) {
+  #contact-main .info-contact-container .contact-title {
+    font-size: 3.5rem;
+  }
+  #contact-main .info-contact-container .contact-info {
+    font-size: 1.8rem;
+  }
+  #contact-main .info-contact-container #sponsored-videos-subtitle {
+    font-size: 2.6rem;
+  }
+  #contact-main .info-contact-container .disclaimer {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (max-width: 700px) {
+  #contact-main {
+    flex-wrap: wrap;
+  }
+  #contact-main .info-contact-container {
+    min-height: 42vh;
+    flex-basis: 95%;
+    margin: auto;
+  }
+  #contact-main .info-contact-container .contact-title {
+    justify-content: center;
+  }
+  #contact-main .info-contact-container .contact-info {
+    padding-right: 0rem;
+  }
+  #contact-main .info-contact-container #sponsored-videos-subtitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #contact-main .info-input-container {
+    min-height: 60vh;
+    flex-basis: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0rem;
+  }
+  #contact-main .form-name, #contact-main .form-email, #contact-main .form-text-area, #contact-main .form-subject {
+    padding-bottom: 5rem;
+  }
+  #contact-main form {
+    width: 95%;
+  }
+}
+@media only screen and (max-width: 528px) {
+  #contact-main .info-contact-container .contact-title {
+    font-size: 2.6rem;
+  }
+  #contact-main .info-contact-container .contact-info {
+    font-size: 1.6rem;
+  }
+  #contact-main .info-contact-container #sponsored-videos-subtitle {
+    font-size: 2.2rem;
+  }
+  #contact-main .info-contact-container .disclaimer {
+    margin-bottom: 2.5rem;
+    font-size: 1.6rem;
+  }
+}
 #about-main {
   min-height: 69vh;
   display: flex;
@@ -306,7 +382,7 @@ Mobile
   padding: 1.5rem;
   text-align: left;
   font-family: "Noto Sans", sans-serif;
-  line-height: 1.6;
+  line-height: 1.8;
 }
 
 #self-image {
@@ -318,9 +394,14 @@ Mobile
 }
 
 @media only screen and (max-width: 850px) {
+  #about-main .about-title-container {
+    width: 25rem;
+  }
   #about-main .about-title {
-    font-size: 7rem;
-    min-width: 30rem;
+    font-size: 5rem;
+  }
+  #about-main .about-introduction-container {
+    width: 55rem;
   }
   #about-main .about-introduction {
     font-size: 1.7rem;
@@ -328,5 +409,59 @@ Mobile
     text-align: left;
     font-family: "Noto Sans", sans-serif;
     line-height: 1.6;
+  }
+
+  #self-image {
+    height: 250px;
+    width: 250px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  #about-main {
+    flex-wrap: wrap;
+  }
+  #about-main .about-title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    min-height: 29vh;
+    margin: auto;
+    padding: 1rem;
+  }
+  #about-main .about-introduction-container {
+    width: 95%;
+    min-height: 39vh;
+    margin: auto;
+  }
+  #about-main .about-introduction {
+    font-size: 1.9rem;
+    text-align: justify;
+  }
+}
+@media only screen and (max-width: 632px) {
+  #nav-bar #nav-title {
+    font-size: 2.5rem;
+  }
+
+  #about-main .about-title-container {
+    padding: 0rem;
+    flex-wrap: wrap;
+  }
+  #about-main .about-title {
+    text-align: center;
+  }
+  #about-main .about-introduction {
+    font-size: 1.6rem;
+    padding: 0rem;
+    padding-bottom: 0.5rem;
+    line-height: 1.8;
+  }
+
+  #self-image {
+    height: 200px;
+    width: 200px;
+    position: relative;
+    bottom: 30px;
   }
 }/*# sourceMappingURL=style.css.map */
