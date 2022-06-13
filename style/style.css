@@ -145,9 +145,6 @@ Navigation
   #nav-bar #nav-items {
     display: none;
   }
-  #nav-bar #nav-title {
-    z-index: 12;
-  }
   #nav-bar .mobile-menu {
     display: inline-block;
   }
@@ -270,7 +267,7 @@ Mobile
   align-items: center;
 }
 #contact-main .info-contact-container .contact-info {
-  font-size: 2.2rem;
+  font-size: 1.9rem;
   padding-right: 5rem;
   margin-bottom: 3.5rem;
   font-family: "Noto Sans", sans-serif;
@@ -283,7 +280,7 @@ Mobile
 #contact-main .info-contact-container .disclaimer {
   font-family: "Noto Sans", sans-serif;
   margin-top: 5rem;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   padding-right: 5rem;
   line-height: 1.6;
 }
